@@ -5,9 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css" />
   </head>
   <body>
-    <div class=""></div>
-    Hello
+    <h1 class="text-lg">Standard + ratio</h1>
+    <table class="table-auto mx-auto">
+      <tr>
+        <th>container</th>
+        <th>padding</th>
+        <th>gap</th>
+        <th>col</th>
+        <th>ratio</th>
+      </tr>
+      <tr>
+        <td class="border border-black">360,414,428</td>
+        <td class="border border-black">16</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">2:1</td>
+      </tr>
+      <tr>
+        <td class="border border-black">768</td>
+        <td class="border border-black">24</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">2:1</td>
+      </tr>
+      <tr>
+        <td class="border border-black">810,1024,1080,1280</td>
+        <td class="border border-black">24</td>
+        <td class="border border-black">32</td>
+        <td class="border border-black">2/3</td>
+        <td class="border border-black">2:1</td>
+      </tr>
+    </table>
+    <div
+      class="
+        container
+        px-4
+        tp:px-6
+        ti8p:grid ti8p:grid-cols-3 ti8p:gap-8
+        mx-auto
+        border border-black
+      "
+    >
+      <img
+        class="w-full ti8p:col-span-2"
+        src="./image/standard.jpg"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <hr />
+
+    <h1 class="text-lg mt-8">Waterfall</h1>
+    <table class="table-auto mx-auto">
+      <tr>
+        <th>container</th>
+        <th>padding</th>
+        <th>gap</th>
+        <th>col</th>
+        <th>ratio</th>
+      </tr>
+      <tr>
+        <td class="border border-black">360,414,428</td>
+        <td class="border border-black">16</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+      </tr>
+      <tr>
+        <td class="border border-black">768,810,1024,1080,1280</td>
+        <td class="border border-black">24</td>
+        <td class="border border-black">16</td>
+        <td class="border border-black">1/2</td>
+        <td class="border border-black">–</td>
+      </tr>
+    </table>
+    <div
+      class="
+        container
+        px-4
+        tp:px-6 tp:grid tp:grid-cols-2 tp:gap-4
+        mx-auto
+        border border-black
+      "
+    >
+      <img class="w-full" src="./image/waterfall.jpg" alt="" srcset="" />
+    </div>
+    <hr />
+
+    <h1 class="text-lg mt-8">Gallery contain (目前没有)</h1>
+    <table class="table-auto mx-auto">
+      <tr>
+        <th>container</th>
+        <th>padding</th>
+        <th>gap</th>
+        <th>col</th>
+        <th>ratio</th>
+      </tr>
+      <tr>
+        <td class="border border-black">360,414,428</td>
+        <td class="border border-black">16</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">2:1</td>
+      </tr>
+      <tr>
+        <td class="border border-black">768,810,1024,1080,1280</td>
+        <td class="border border-black">24</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">2:1</td>
+      </tr>
+    </table>
+    <div class="container px-4 tp:px-6 mx-auto border border-black">
+      <div class="aspect-w-2 aspect-h-1">
+        <img
+          src="./image/gallery-contain.jpg"
+          class="w-full h-full object-center object-contain bg-black"
+        />
+      </div>
+    </div>
+    <hr />
+
+    <h1 class="text-lg mt-8">Light box</h1>
+    <table class="table-auto mx-auto">
+      <tr>
+        <th>container</th>
+        <th>padding</th>
+        <th>gap</th>
+        <th>col</th>
+        <th>ratio</th>
+      </tr>
+      <tr>
+        <td class="border border-black">full screen</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+        <td class="border border-black">–</td>
+      </tr>
+    </table>
+    <div class="w-full h-screen border border-black">
+      <img
+        class="w-full h-screen bg-black object-contain"
+        src="./image/lightbox-1.jpg"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <hr />
   </body>
 </html>
